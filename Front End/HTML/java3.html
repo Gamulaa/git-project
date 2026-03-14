@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <label for="age">Enter your age:</label>
+    <input type="number" id="age" placeholder="enter your age">
+    <button onclick="checkAge()">Submit</button>
+    <p id="agee"></p>
+    <script>
+      function checkAge(){
+        let youAge=document.getElementById("age").value;
+        if(youAge>=18){
+          document.getElementById("agee").innerHTML="You are adult enough";
+        }
+        else{
+          document.getElementById("agee").innerHTML="You are minor";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Simple Calculator</h2>
+
+<input type="number" id="num1">
+<input type="number" id="num2">
+
+<button onclick="add()">Add</button>
+
+<p id="answer"></p>
+
+<script>
+function add(){
+    let n1 = Number(document.getElementById("num1").value);
+    let n2 = Number(document.getElementById("num2").value);
+
+    let result = n1 + n2;
+
+    document.getElementById("answer").innerHTML = "Result: " + result;
+}
+</script>
+
+</body>
+</html>

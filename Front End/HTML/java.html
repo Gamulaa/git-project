@@ -1,0 +1,35 @@
+<!-- this is a simple HTML file that takes user input 
+and displays a greeting message using JavaScript. 
+The user can enter their name in the input field, 
+and upon clicking the "Submit" button, the greet() function 
+is called, which retrieves the value from the input 
+field and updates the content of the paragraph with id "result" 
+to display a personalized greeting./-->
+<!DOCTYPE html>
+
+<html>
+<body>
+
+<h2>Enter Your Name</h2>
+
+<input type="text" id="username">
+<button onclick="greet()">Submit</button>
+
+<p id="result"></p>
+
+<script>
+function greet(){
+    let name = document.getElementById("username").value;
+    document.getElementById("result").innerHTML = "Hello " + name;
+}
+</script>
+
+</body>
+</html>
+<!--this one is weird but it is a simple HTML file 
+that takes user input and displays a greeting message 
+using JavaScript. The user can enter their name 
+in the input field, and upon clicking the "Submit" button,
+ the greet() function is called, which retrieves the 
+ value from the input field and updates the content of the
+ paragraph with id "result" to display a personalized greeting.-->

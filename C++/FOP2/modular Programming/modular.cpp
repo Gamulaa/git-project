@@ -11,7 +11,6 @@ int main()
 {
     double balance = 1000.0;   // Initial balance
     int choice;
-
     do
     {
         showMenu();

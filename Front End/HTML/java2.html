@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Login</h2>
+
+<form onsubmit="login(event)">
+  <input type="text" id="user" placeholder="Username"><br><br>
+  <input type="password" id="pass" placeholder="Password"><br><br>
+  <button type="submit">Login</button>
+</form>
+
+<p id="message"></p>
+
+<script>
+function login(event){
+    event.preventDefault(); // stops page reload
+
+    let username = document.getElementById("user").value;
+    let password = document.getElementById("pass").value;
+
+    if(username === "admin" && password === "1234"){
+        document.getElementById("message").innerHTML = "Login Successful!";
+    } else {
+        document.getElementById("message").innerHTML = "Wrong Credentials!";
+    }
+}
+</script>
+
+</body>
+</html>
