@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
   <body>
-    <label for="age">Enter your age:</label>
-    <input type="number" id="age" placeholder="enter your age">
-    <button onclick="checkAge()">Submit</button>
-    <p id="agee"></p>
-    <script>
-      function checkAge(){
-        let youAge=document.getElementById("age").value;
-        if(youAge>=18){
-          document.getElementById("agee").innerHTML="You are adult enough";
-        }
-        else{
-          document.getElementById("agee").innerHTML="You are minor";
-        }
-      }
-    </script>
+    
+   <h1>Enter radius </h1>
+   <label>Enter radius:</label>
+   <input type="number" id="here">
+   <button onclick="calc()">Get Area</button>
+   <p id="rad"></p>
+   <script>
+    function calc(){
+      const PI=3.14;
+    let radius=Number(document.getElementById("here").value);
+    let area=PI*radius*radius;
+    document.getElementById("rad").innerHTML="The area of the given radius is " + area + "cm<sup>2</sup>";
+    }
+    
+   </script>
   </body>
 </html>
